@@ -1,42 +1,17 @@
-import { isEqual } from 'date-fns';
+import { EntityRepository, Repository } from 'typeorm';
+
 import Appointment from '../models/Appointment';
 
-interface CreateAppointment {
-  provider: string;
-  date: Date;
-}
-
-class AppointmentsRepository {
-  private appointments: Appointment[];
-
-  constructor() {
-    this.appointments = [];
-  }
-
-  public all(): Appointment[] {
-    return this.appointments;
-  }
-
-  /** Procura o agendamento, se achar, retorna o Appointment, se não, retorna nulo. */
-  public findByDate(date: Date): Appointment | null {
-    // Regra de negócio
-    const findAppointment = this.appointments.find(appointment =>
-      isEqual(date, appointment.date),
-    );
+@EntityRepository(Appointment)
+class AppointmentsRepository extends Repository<Appointment> {
+  /** Regra de negócio.
+   * Procura o agendamento, se achar, retorna o Appointment, se não, retorna nulo. */
+  public async findByDate(date: Date): Promise<Appointment | null> {
+    const findAppointment = await this.findOne({
+      where: { date },
+    });
 
     return findAppointment || null;
-  }
-
-  /** Recebe os dados do Service para criar o agendamento de acordo com o Model
-   * Objeto da interface CreateAppointment */
-  public create({ provider, date }: CreateAppointment): Appointment {
-    // Criação de objeto appointment
-    const appointment = new Appointment({ provider, date });
-
-    // Salvar em this.appointments
-    this.appointments.push(appointment);
-
-    return appointment;
   }
 }
 

@@ -1,28 +1,25 @@
 import { startOfHour } from 'date-fns';
+import { getCustomRepository } from 'typeorm';
 
 import Appointment from '../models/Appointment';
 import AppointmentsRepository from '../repositories/AppointmentsRepository';
 
 interface Request {
-  provider: string;
+  provider_id: string;
   date: Date;
 }
 
 class CreateAppointmentService {
-  /** Recebe o repositório como uma variável do constructor */
-  private appointmentsRepository: AppointmentsRepository;
-
-  constructor(appointmentsRepository: AppointmentsRepository) {
-    this.appointmentsRepository = appointmentsRepository;
-  }
-
   // Recebe o date e o provider da rota
-  public execute({ provider, date }: Request): Appointment {
+  public async execute({ provider_id, date }: Request): Promise<Appointment> {
+    // Contém os métodos de execução do repositório.
+    const appointmentsRepository = getCustomRepository(AppointmentsRepository);
+
     // Regra de negócio
     const appointmentDate = startOfHour(date);
 
     // Consulta no repositório se há o objeto
-    const findAppointmentInSameDate = this.appointmentsRepository.findByDate(
+    const findAppointmentInSameDate = await appointmentsRepository.findByDate(
       appointmentDate,
     );
 
@@ -30,11 +27,14 @@ class CreateAppointmentService {
       throw Error('This appointment is already booked.');
     }
 
-    // Cria o agendamento através do repositório
-    const appointment = this.appointmentsRepository.create({
-      provider,
+    // Cria o agendamento através do repositório, a instância do objeto
+    const appointment = appointmentsRepository.create({
+      provider_id,
       date: appointmentDate,
     });
+
+    // Salva a instância de appointment criada acima no repositório.
+    await appointmentsRepository.save(appointment);
 
     return appointment;
   }
