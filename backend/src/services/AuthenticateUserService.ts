@@ -18,6 +18,7 @@ interface Response {
 
 class AuthenticateUserService {
   public async execute({ email, password }: Request): Promise<Response> {
+    /** Cria um repositório padrão a partir da model User */
     const usersRepository = getRepository(User);
 
     const user = await usersRepository.findOne({
