@@ -75,7 +75,7 @@ Para rodar apenas o front-end:
 
 ![Mobile Repository]()
 
-## Pré-requisitos
+## Requisitos
 
 :warning: [Node](https://nodejs.org/en/download/)
 :warning: [Yarn](https://yarnpkg.com/getting-started/install)
