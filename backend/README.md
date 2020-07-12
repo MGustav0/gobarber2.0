@@ -71,28 +71,24 @@ Pronto! Agora basta acessar a aplicação à partir do link: http://localhost:33
 Resultados obtidos pelo [Insomnia](https://insomnia.rest/download/) um software para interação com o backend (API) via HTTP e JSON.
 
 ### Criar usuário
- 
-<img src="https://github.com/MGustav0/desafio-gostack-database-upload/blob/master/extras/prints/print_create.png" max-width="800" max-heigth="600" />
+
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/01_-_create_user.png" max-width="800" max-heigth="600" />
 
 ### Logar Usuário
- 
-Lista as transações e informa o balanço:
 
-<img src="https://github.com/MGustav0/desafio-gostack-database-upload/blob/master/extras/prints/print_list.png" max-width="800" max-heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/02_-_user_login.png" max-width="800" max-heigth="600" />
 
 ### Atualizar Avatar
 
-Importa arquivos do tipo CSV **[neste formato]**(https://github.com/MGustav0/desafio-gostack-database-upload/blob/master/extras/file.csv):
-
-<img src="https://github.com/MGustav0/desafio-gostack-database-upload/blob/master/extras/prints/print_import.png" max-width="800" max-heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/03_-_avatar_update.png" max-width="800" max-heigth="600" />
 
 ### Criar agendamentos
 
-<img src="https://github.com/MGustav0/desafio-gostack-database-upload/blob/master/extras/prints/print_delete_error.png" max-width="800" max-heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/04_-_create_appointment.png" max-width="800" max-heigth="600" />
 
 ### Listar agendamentos
 
-<img src="https://github.com/MGustav0/desafio-gostack-database-upload/blob/master/extras/prints/print_delete_error.png" max-width="800" max-heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/05_-_list_appointment.png" max-width="800" max-heigth="600" />
 
 ## :memo: Licença
 
