@@ -60,7 +60,7 @@ Ter Docker/PostgreSQL instalados.
 
 2. Acesse a pasta backend via terminal `cd /backend`.
 
-3. Instale as dependencias: `yarn instal`
+3. Instale as dependencias: `yarn install`
 
 4. Execute: `yarn dev:server`
 
