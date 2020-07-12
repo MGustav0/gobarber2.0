@@ -46,39 +46,47 @@ Será necessário o [back-end](https://github.com/MGustav0/gobarber2.0/tree/mast
 
 ## Iniciando banco de dados
 
-Faça como explicado no [README.md do projeto back-end](https://github.com/MGustav0/desafio-gostack-database-upload).
+Faça como explicado no [README.md do projeto back-end](https://github.com/MGustav0/gobarber2.0/blob/master/backend/README.md).
 
 
 ## Como rodar a aplicação :arrow_forward:
 
 Para rodar apenas o front-end:
 
-1. No terminal, clone o projeto: `git clone https://github.com/MGustav0/github-explorer.git`
+1. No terminal, clone o projeto: `git@github.com:MGustav0/gobarber2.0.git`
 
-2. Acesse a pasta via terminal.
+2. Acesse a pasta via terminal: `cd ./web`.
 
-3. Instale as dependencias: `yarn instal`
+3. Instale as dependencias: `yarn install`
 
 4. Execute: `yarn start`
-
-## Layout da Aplicação :dash:
-
-![Dashboard]()
-
-![Repository]()
-
-![Erro de Inserção]()
-
-![Erro de campo vazio]()
-
-![Mobile Dashboard]()
-
-![Mobile Repository]()
 
 ## Requisitos
 
 :warning: [Node](https://nodejs.org/en/download/)
 :warning: [Yarn](https://yarnpkg.com/getting-started/install)
+
+## Layout da Aplicação :dash:
+
+### Criar usuário
+
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/01_-_create_user.png" max-width="800" max-heigth="600" />
+
+### Logar Usuário
+
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/02_-_user_login.png" max-width="800" max-heigth="600" />
+
+### Atualizar Avatar
+
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/03_-_avatar_update.png" max-width="800" max-heigth="600" />
+
+### Criar agendamentos
+
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/04_-_create_appointment.png" max-width="800" max-heigth="600" />
+
+### Listar agendamentos
+
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/05_-_list_appointment.png" max-width="800" max-heigth="600" />
 
 ## Resolvendo Problemas :exclamation:
 
