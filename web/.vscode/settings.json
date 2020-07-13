@@ -24,6 +24,9 @@
     "borderColor : {color}",
     "opacity: 0.5"
   ],
+  "cSpell.words": [
+    "Errored"
+  ],
   // "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
   // "bracket-pair-colorizer-2.forceIterationColorCycle": true,
 }
