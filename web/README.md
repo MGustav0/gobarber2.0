@@ -8,13 +8,19 @@
 
 :small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
+:small_blue_diamond: [Linguagens, dependencias e libs utilizadas](#dependências)
+
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
 :small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
+:small_blue_diamond: [Iniciando banco de dados](#banco-de-dados)
+
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+
+:small_blue_diamond: [Layout da Aplicação](#layout-da-aplicação)
 
 ## Descrição do projeto
 
@@ -31,9 +37,11 @@ Neste projeto desenvolvo a interface WEB da aplicação GoBarber. Onde será pos
 
 :heavy_check_mark: Login
 
-:heavy_check_mark: Listar pretadores
+:x: Atualizar Avatar
 
-:heavy_check_mark: Listar agendamentos
+:x: Listar prestadores
+
+:x: Listar agendamentos
 
 ## Pré-requisitos
 
@@ -61,32 +69,27 @@ Para rodar apenas o front-end:
 
 4. Execute: `yarn start`
 
-## Requisitos
-
-:warning: [Node](https://nodejs.org/en/download/)
-:warning: [Yarn](https://yarnpkg.com/getting-started/install)
-
 ## Layout da Aplicação :dash:
 
 ### Criar usuário
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/01_-_create_user.png" max-width="800" max-heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/01_-_create_user.png" max-width="800" max-heigth="600" />
 
 ### Logar Usuário
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/02_-_user_login.png" max-width="800" max-heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/02_-_user_login.png" max-width="800" max-heigth="600" />
 
 ### Atualizar Avatar
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/03_-_avatar_update.png" max-width="800" max-heigth="600" />
+<img src="" max-width="800" max-heigth="600" />
 
 ### Criar agendamentos
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/04_-_create_appointment.png" max-width="800" max-heigth="600" />
+<img src="" max-width="800" max-heigth="600" />
 
 ### Listar agendamentos
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/backend/05_-_list_appointment.png" max-width="800" max-heigth="600" />
+<img src="" max-width="800" max-heigth="600" />
 
 ## Resolvendo Problemas :exclamation:
 
