@@ -37,9 +37,11 @@ Neste projeto desenvolvo a interface WEB da aplicação GoBarber. Onde será pos
 
 :heavy_check_mark: Login
 
-:heavy_check_mark: Listar prestadores
+:x: Atualizar Avatar
 
-:heavy_check_mark: Listar agendamentos
+:x: Listar prestadores
+
+:x: Listar agendamentos
 
 ## Pré-requisitos
 
