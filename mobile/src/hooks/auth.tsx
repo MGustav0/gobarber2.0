@@ -21,6 +21,7 @@ interface SignInCredentials {
 
 interface AuthContextData {
   user: Record<string, unknown>;
+  loading: boolean;
   signIn(credentials: SignInCredentials): Promise<void>;
   signOut(): void;
 }
@@ -35,6 +36,7 @@ const AuthProvider: React.FC = ({ children }) => {
    * quando o usuário fechar a aplicação
    */
   const [data, setData] = useState<AuthState>({} as AuthState);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadStorageData(): Promise<void> {
@@ -46,6 +48,8 @@ const AuthProvider: React.FC = ({ children }) => {
       if (token[1] && user[1]) {
         setData({ token: token[1], user: JSON.parse(user[1]) });
       }
+
+      setLoading(false);
     }
 
     loadStorageData();
@@ -59,7 +63,7 @@ const AuthProvider: React.FC = ({ children }) => {
 
     const { token, user } = response.data;
 
-    /** Armazena o token no localStorage */
+    /** Armazena o usuário e o token no localStorage */
     await AsyncStorage.multiSet([
       ['@GoBarber:token', token],
       ['@GoBarber:user', JSON.stringify(user)],
@@ -69,13 +73,13 @@ const AuthProvider: React.FC = ({ children }) => {
   }, []);
 
   const signOut = useCallback(async () => {
-    await AsyncStorage.multiRemove(['@GoBarber:token', '@GoBarber:user']);
+    await AsyncStorage.multiRemove(['@GoBarber:user', '@GoBarber:token']);
 
     setData({} as AuthState);
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user: data.user, signIn, signOut }}>
+    <AuthContext.Provider value={{ user: data.user, loading, signIn, signOut }}>
       {children}
     </AuthContext.Provider>
   );
