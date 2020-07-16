@@ -72,7 +72,7 @@ Para rodar apenas o front-end:
 
 ### Criar usuário
 
-<img max-width="270" max-heigth="480" src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/01_-_create_user.jpg">
+<img max-width="270" max-heigth="480" valign="middle" src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/01_-_create_user.jpg">
 
 ### Logar Usuário
 
