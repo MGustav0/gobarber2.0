@@ -1,6 +1,6 @@
 # GoBarber App Mobile
 
-![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-React-Native-blueviolet) ![Badge](https://img.shields.io/badge/types-Flow%20%7C%20TypeScript-blue)
+![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-React%20Native-blueviolet) ![Badge](https://img.shields.io/badge/types-Flow%20%7C%20TypeScript-blue)
 
 > Status do Projeto: Em desenvolvimento :warning:
 
