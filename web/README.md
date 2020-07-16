@@ -24,7 +24,7 @@
 
 ## Descrição do projeto
 
-Neste projeto desenvolvo a interface WEB da aplicação GoBarber. Onde será posível realizar login na plataforma, agendamentos dos e para os clientes, pesquisar e exibir agendamentos e prestadores de serviço, tudo recebido através da API (back-end) própria.
+Neste projeto desenvolvo a interface WEB da aplicação GoBarber. Onde será posível realizar login e cadastro na plataforma, agendamentos dos e para os clientes, pesquisar e exibir agendamentos e prestadores de serviço, tudo recebido através da API (back-end) própria.
 
 ## Linguagens, dependencias e libs utilizadas :books:
 
@@ -55,7 +55,6 @@ Será necessário o [back-end](https://github.com/MGustav0/gobarber2.0/tree/mast
 ## Iniciando banco de dados
 
 Faça como explicado no [README.md do projeto back-end](https://github.com/MGustav0/gobarber2.0/blob/master/backend/README.md).
-
 
 ## Como rodar a aplicação :arrow_forward:
 
@@ -97,8 +96,6 @@ Me conte [aqui](https://github.com/MGustav0/desafio-gostack-fundamentos-reactjs/
 
 ## Licença
 
-[Template](https://github.com/Rocketseat/gostack-template-fundamentos-reactjs) escrito pela Rocketseat para o Bootcamp.
-
-[Interface](https://www.figma.com/file/EgOhyj1Inz14dhWGVhRlhr/GoFinances?node-id=1%3A863) desenhada pela Rocketseat para o Bootcamp.
+Interface desenhada pela Rocketseat para o Bootcamp.
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
