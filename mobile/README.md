@@ -1,6 +1,6 @@
-# GoBarber
+# GoBarber App Mobile
 
-![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-ReactJS-blueviolet) ![Badge](https://img.shields.io/badge/types-Flow%20%7C%20TypeScript-blue)
+![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-React%20Native-blueviolet) ![Badge](https://img.shields.io/badge/types-Flow%20%7C%20TypeScript-blue)
 
 > Status do Projeto: Em desenvolvimento :warning:
 
@@ -24,11 +24,11 @@
 
 ## Descrição do projeto
 
-Neste projeto desenvolvo a interface WEB da aplicação GoBarber. Onde será posível realizar login e cadastro na plataforma, agendamentos dos e para os clientes, pesquisar e exibir agendamentos e prestadores de serviço, tudo recebido através da API (back-end) própria.
+Neste projeto desenvolvo a interface em App Mobile da aplicação GoBarber, onde será posível realizar login e cadastro na plataforma, agendamentos dos e para os clientes, pesquisar e exibir agendamentos e prestadores de serviço, tudo recebido através da API (back-end) própria.
 
 ## Linguagens, dependencias e libs utilizadas :books:
 
-- [ReactJS](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## Funcionalidades
@@ -72,23 +72,23 @@ Para rodar apenas o front-end:
 
 ### Criar usuário
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/01_-_create_user.png" max-width="800" max-heigth="600" />
+<img max-width="270" max-heigth="480" valign="middle" src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/01_-_create_user.jpg">
 
 ### Logar Usuário
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/02_-_user_login.png" max-width="800" max-heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/02_-_user_login.jpg" max-width="270" max-heigth="480" />
 
 ### Atualizar Avatar
 
-<img src="" max-width="800" max-heigth="600" />
+<img src="" max-width="270" max-heigth="480" />
 
 ### Criar agendamentos
 
-<img src="" max-width="800" max-heigth="600" />
+<img src="" max-width="270" max-heigth="480" />
 
 ### Listar agendamentos
 
-<img src="" max-width="800" max-heigth="600" />
+<img src="" max-width="270" max-heigth="480" />
 
 ## Resolvendo Problemas :exclamation:
 
