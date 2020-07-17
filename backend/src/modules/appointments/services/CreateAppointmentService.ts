@@ -1,26 +1,25 @@
 import { startOfHour } from 'date-fns';
-import { getCustomRepository } from 'typeorm';
 
 import AppError from '@shared/errors/AppError';
 import Appointment from '@modules/appointments/infra/orm/entities/Appointment';
-import AppointmentsRepository from '@modules/appointments/infra/orm/repositories/AppointmentsRepository';
+import IAppointmentsRepository from '@modules/appointments/infra/repositories/IAppointmentsRepository';
 
-interface Request {
+interface IRequest {
   provider_id: string;
   date: Date;
 }
 
 class CreateAppointmentService {
-  // Recebe o date e o provider da rota
-  public async execute({ provider_id, date }: Request): Promise<Appointment> {
-    // Contém os métodos de execução do repositório.
-    const appointmentsRepository = getCustomRepository(AppointmentsRepository);
+  // Contém os métodos de execução do repositório.
+  constructor(private appointmentsRepository: IAppointmentsRepository) {}
 
+  // Recebe o date e o provider da rota
+  public async execute({ provider_id, date }: IRequest): Promise<Appointment> {
     // Regra de negócio
     const appointmentDate = startOfHour(date);
 
     // Consulta no repositório se há o objeto
-    const findAppointmentInSameDate = await appointmentsRepository.findByDate(
+    const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(
       appointmentDate,
     );
 
@@ -29,13 +28,10 @@ class CreateAppointmentService {
     }
 
     // Cria o agendamento através do repositório, a instância do objeto
-    const appointment = appointmentsRepository.create({
+    const appointment = await this.appointmentsRepository.create({
       provider_id,
       date: appointmentDate,
     });
-
-    // Salva a instância de appointment criada acima no repositório.
-    await appointmentsRepository.save(appointment);
 
     return appointment;
   }
