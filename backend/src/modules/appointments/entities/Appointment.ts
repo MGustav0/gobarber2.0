@@ -8,7 +8,7 @@ import {
   JoinColumn,
 } from 'typeorm';
 
-import User from './User';
+import User from '../../users/entities/User';
 
 /** Entidade Appointment, usada para descrever os objetos Appointment.
  * É o molde do agendamento. */
