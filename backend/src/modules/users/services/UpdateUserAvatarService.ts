@@ -1,18 +1,23 @@
 import path from 'path';
 import fs from 'fs';
+import { injectable, inject } from 'tsyringe';
 
-import upoloadConfig from '@config/upload';
+import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
 import User from '@modules/users/infra/orm/entities/User';
-import IAppointmentsRepository from '@modules/users/repositories/IUsersRepositoriy';
+import IUsersRepository from '@modules/users/repositories/IUsersRepositoriy';
 
 interface IRequest {
   user_id: string;
   avatarFilename: string;
 }
 
+@injectable()
 class UpdateUserAvatarService {
-  constructor(private usersRepository: IAppointmentsRepository) {}
+  constructor(
+    @inject('usersRepository')
+    private usersRepository: IUsersRepository,
+  ) {}
 
   public async execute({ user_id, avatarFilename }: IRequest): Promise<User> {
     const user = await this.usersRepository.findById(user_id);
@@ -23,12 +28,9 @@ class UpdateUserAvatarService {
 
     /** Deletar avatar anterior, deleta o arquivo em disco e substitui o id no BD */
     if (user.avatar) {
-      const userAvatarFilePath = path.join(
-        upoloadConfig.directory,
-        user.avatar,
-      );
+      const userAvatarFilePath = path.join(uploadConfig.directory, user.avatar);
 
-      // fs.promises - Usa as funções do File Sistem (fs) do node em formato de promises.
+      // fs.promises - Usa as funções do File System (fs) do node em formato de promises.
       const userAvatarFileExists = await fs.promises.stat(userAvatarFilePath);
 
       if (userAvatarFileExists) {

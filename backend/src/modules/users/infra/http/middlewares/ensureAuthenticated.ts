@@ -4,7 +4,7 @@ import { verify } from 'jsonwebtoken';
 import authConfig from '@config/auth';
 import AppError from '@shared/errors/AppError';
 
-interface TokenPayload {
+interface ITokenPayload {
   iat: number;
   exp: number;
   sub: string;
@@ -27,12 +27,12 @@ export default function ensureAuthenticated(
     const decoded = verify(token, authConfig.jwt.secret);
 
     /** decoded as TokenPayload - forçar o tipo da variável decoded */
-    const { sub } = decoded as TokenPayload;
+    const { sub } = decoded as ITokenPayload;
 
     /** Observação em /src/@types/express.d.ts
-     * Foi adicionado um novo parâmetro à biblioteca, assi pode-se incluir a informação de
+     * Foi adicionado um novo parâmetro à biblioteca, assim pode-se incluir a informação de
      * "id" do usuário dentro do request. A rota que utilizar este middleware terá essa
-     * informação junto ao corpo da requisção.
+     * informação junto ao corpo da requisição.
      */
     request.user = { id: sub };
 

@@ -9,6 +9,7 @@ import uploadConfig from '@config/upload';
 import routes from '@shared/infra/http/routes';
 
 import '@shared/infra/orm';
+import '@shared/container';
 
 const app = express();
 

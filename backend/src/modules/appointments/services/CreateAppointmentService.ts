@@ -1,4 +1,5 @@
 import { startOfHour } from 'date-fns';
+import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
 import Appointment from '@modules/appointments/infra/orm/entities/Appointment';
@@ -9,9 +10,13 @@ interface IRequest {
   date: Date;
 }
 
+@injectable()
 class CreateAppointmentService {
   // Contém os métodos de execução do repositório.
-  constructor(private appointmentsRepository: IAppointmentsRepository) {}
+  constructor(
+    @inject('appointmentsRepository')
+    private appointmentsRepository: IAppointmentsRepository,
+  ) {}
 
   // Recebe o date e o provider da rota
   public async execute({ provider_id, date }: IRequest): Promise<Appointment> {

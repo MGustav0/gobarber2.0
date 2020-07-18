@@ -1,8 +1,9 @@
 import { hash } from 'bcryptjs';
+import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
 import User from '@modules/users/infra/orm/entities/User';
-import IAppointmentsRepository from '@modules/users/repositories/IUsersRepositoriy';
+import IUsersRepository from '@modules/users/repositories/IUsersRepositoriy';
 
 interface IRequest {
   name: string;
@@ -10,9 +11,13 @@ interface IRequest {
   password: string;
 }
 
+@injectable()
 class CreateUserService {
   // Contém os métodos de execução do repositório.
-  constructor(private usersRepository: IAppointmentsRepository) {}
+  constructor(
+    @inject('usersRepository')
+    private usersRepository: IUsersRepository,
+  ) {}
 
   public async execute({ name, email, password }: IRequest): Promise<User> {
     const checkUserExists = await this.usersRepository.findByEmail(email);
