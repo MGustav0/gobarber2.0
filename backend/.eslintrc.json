@@ -30,17 +30,9 @@
       "argsIgnorePattern": "_"
     }],
     "no-useless-constructor": "off",
-    "@typescript-eslint/naming-convention": [
-      "error",
-      {
-        "selector": "interface",
-        "format": ["PascalCase"],
-        "custom": {
-          "regex": "^I[A-Z]",
-          "match": false
-        }
-      }
-    ],
+    "@typescript-eslint/interface-name-prefix": ["error", {
+      "prefixWithI": "always"
+    }],
     "import/extensions": [
       "error",
       "ignorePackages",
