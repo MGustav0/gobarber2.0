@@ -4,8 +4,11 @@ import { injectable, inject } from 'tsyringe';
 
 import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
+
 import User from '@modules/users/infra/orm/entities/User';
+
 import IUsersRepository from '@modules/users/repositories/IUsersRepositoriy';
+import IStorageProvider from '@shared/container/providers/StorageProvider/models/IStorageProvider';
 
 interface IRequest {
   user_id: string;
@@ -17,6 +20,9 @@ class UpdateUserAvatarService {
   constructor(
     @inject('usersRepository')
     private usersRepository: IUsersRepository,
+
+    @inject('StorageProvider')
+    private storageProvider: IStorageProvider,
   ) {}
 
   public async execute({ user_id, avatarFilename }: IRequest): Promise<User> {
@@ -26,20 +32,16 @@ class UpdateUserAvatarService {
       throw new AppError('Only authenticated users can change avatar.', 401);
     }
 
-    /** Deletar avatar anterior, deleta o arquivo em disco e substitui o id no BD */
+    /** Deleta o avatar anterior localizado em user.avatar antes de salvar o novo */
     if (user.avatar) {
-      const userAvatarFilePath = path.join(uploadConfig.directory, user.avatar);
-
-      // fs.promises - Usa as funções do File System (fs) do node em formato de promises.
-      const userAvatarFileExists = await fs.promises.stat(userAvatarFilePath);
-
-      if (userAvatarFileExists) {
-        await fs.promises.unlink(userAvatarFilePath);
-      }
+      await this.storageProvider.deleteFile(user.avatar);
     }
 
-    /** Atualiza as informações do usuário, no caso o avatar */
-    user.avatar = avatarFilename;
+    /** Salva o arquivo (avatarFilename) em disco */
+    const fileName = await this.storageProvider.saveFile(avatarFilename);
+
+    /** Atualiza as informações do usuário, o avatar */
+    user.avatar = fileName;
 
     await this.usersRepository.save(user);
 
