@@ -5,7 +5,7 @@ import ICreateUserDTO from '@modules/users/dtos/ICreateUserDTO';
 import User from '@modules/users/infra/orm/entities/User';
 
 class UsersRepository implements IUsersRepository {
-  /** A variável ormRepository é uma repositório do TypeORM da entidade User.
+  /** A variável ormRepository é uma repositório do sTypeORM da entidade User.
    * Cria a tipagem do repositório.
    */
   private ormRepository: Repository<User>;
