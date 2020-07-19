@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 /** Servir arquivos estáticos com uma linha */
-app.use('/files', express.static(uploadConfig.directory));
+app.use('/files', express.static(uploadConfig.uploadsFolder));
 
 app.use(routes);
 
