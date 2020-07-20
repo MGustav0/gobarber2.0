@@ -16,7 +16,7 @@ interface IRequest {
 class ResetPasswordService {
   // Contém os métodos de execução do repositório.
   constructor(
-    @inject('usersRepository')
+    @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
     @inject('UserTokensRepository')

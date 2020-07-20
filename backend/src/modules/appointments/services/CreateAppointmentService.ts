@@ -14,7 +14,7 @@ interface IRequest {
 class CreateAppointmentService {
   // Contém os métodos de execução do repositório.
   constructor(
-    @inject('appointmentsRepository')
+    @inject('AppointmentsRepository')
     private appointmentsRepository: IAppointmentsRepository,
   ) {}
 

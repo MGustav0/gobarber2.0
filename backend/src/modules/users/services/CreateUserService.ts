@@ -1,9 +1,11 @@
 import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
-import User from '@modules/users/infra/orm/entities/User';
+
 import IUsersRepository from '@modules/users/repositories/IUsersRepositoriy';
 import IHashProvider from '@modules/users/providers/HashProvider/models/IHashProvider';
+
+import User from '@modules/users/infra/orm/entities/User';
 
 interface IRequest {
   name: string;
@@ -15,7 +17,7 @@ interface IRequest {
 class CreateUserService {
   // Contém os métodos de execução do repositório.
   constructor(
-    @inject('usersRepository')
+    @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
     @inject('HashProvider')

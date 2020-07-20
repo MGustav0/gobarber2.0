@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 import uploadConfig from '@config/upload';
-import IStorageProvider from '../models/IMailProvider';
+import IStorageProvider from '@shared/container/providers/MailProvider/models/IMailProvider';
 
 class DiskStorageProvider implements IStorageProvider {
   public async saveFile(file: string): Promise<string> {
