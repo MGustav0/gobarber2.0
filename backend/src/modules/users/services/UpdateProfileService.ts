@@ -4,7 +4,7 @@ import AppError from '@shared/errors/AppError';
 
 import User from '@modules/users/infra/orm/entities/User';
 
-import IUsersRepository from '@modules/users/repositories/IUsersRepositoriy';
+import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import IHashProvider from '@modules/users/providers/HashProvider/models/IHashProvider';
 
 interface IRequest {

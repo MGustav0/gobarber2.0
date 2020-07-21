@@ -4,7 +4,7 @@ import AppError from '@shared/errors/AppError';
 
 import User from '@modules/users/infra/orm/entities/User';
 
-import IUsersRepository from '@modules/users/repositories/IUsersRepositoriy';
+import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import IStorageProvider from '@shared/container/providers/StorageProvider/models/IStorageProvider';
 
 interface IRequest {

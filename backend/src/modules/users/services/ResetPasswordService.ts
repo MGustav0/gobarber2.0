@@ -1,7 +1,7 @@
 import { injectable, inject } from 'tsyringe';
 import { differenceInHours } from 'date-fns';
 
-import IUsersRepository from '@modules/users/repositories/IUsersRepositoriy';
+import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import IUserTokensRepository from '@modules/users/repositories/IUserTokensRepository';
 import IHashProvider from '@modules/users/providers/HashProvider/models/IHashProvider';
 
