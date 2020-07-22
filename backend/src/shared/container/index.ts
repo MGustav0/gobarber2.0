@@ -12,6 +12,9 @@ import UsersRepository from '@modules/users/infra/orm/repositories/UsersReposito
 import IUserTokensRepository from '@modules/users/repositories/IUserTokensRepository';
 import UserTokensRepository from '@modules/users/infra/orm/repositories/UserTokensRepository';
 
+import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
+import NotificationsRepository from '@modules/notifications/infra/orm/repositories/NotificationsRepository';
+
 /** registerSingleton instancia a classe uma única vez durante todo o ciclo de vida
  * da aplicação.
  */
@@ -28,4 +31,9 @@ container.registerSingleton<IUsersRepository>(
 container.registerSingleton<IUserTokensRepository>(
   'UserTokensRepository',
   UserTokensRepository,
+);
+
+container.registerSingleton<INotificationsRepository>(
+  'NotificationsRepository',
+  NotificationsRepository,
 );
