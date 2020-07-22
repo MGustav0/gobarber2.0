@@ -17,16 +17,24 @@ class Appointment {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column()
+  @Column() // Coluna real do banco de dados
   provider_id: string;
 
-  /** Estabelece o relacionamento entre o Model User e Appointment
+  /** Estabelece o relacionamento entre o Model User e Appointment, é um relacionamento
+   * criado para o JavaScript identificar, não para o banco
    * A arrow function retorna o model a ser usado
    * @JoinColumn identifica o usuário/objeto deste prestador/agendamento
    */
   @ManyToOne(() => User)
   @JoinColumn({ name: 'provider_id' })
   provider: User;
+
+  @Column()
+  user_id: string;
+
+  @ManyToOne(() => User)
+  @JoinColumn({ name: 'user_id' })
+  user: User;
 
   @Column('time with time zone')
   date: Date;

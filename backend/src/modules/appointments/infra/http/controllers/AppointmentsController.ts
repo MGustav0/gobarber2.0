@@ -9,6 +9,9 @@ export default class AppointmentsController {
     // Pega da requisição no browser
     const { provider_id, date } = request.body;
 
+    // Recupera a requisição após o login, pois vem de uma rota autenticada
+    const user_id = request.user.id;
+
     // Converte data para o formato javascript
     const parsedDate = parseISO(date);
 
@@ -20,6 +23,7 @@ export default class AppointmentsController {
     const appointment = await createAppointment.execute({
       date: parsedDate,
       provider_id,
+      user_id,
     });
 
     // Retorna ao browser o objeto criado
