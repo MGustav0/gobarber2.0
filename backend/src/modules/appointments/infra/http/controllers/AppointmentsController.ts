@@ -12,16 +12,13 @@ export default class AppointmentsController {
     // Recupera a requisição após o login, pois vem de uma rota autenticada
     const user_id = request.user.id;
 
-    // Converte data para o formato javascript
-    const parsedDate = parseISO(date);
-
     /** Carrega o service, verifica a necessidade de alguma dependência, em caso positivo,
      * vai no /shared/container e retorna uma instância da classe
      */
     const createAppointment = container.resolve(CreateAppointmentService);
 
     const appointment = await createAppointment.execute({
-      date: parsedDate,
+      date,
       provider_id,
       user_id,
     });
