@@ -55,6 +55,7 @@ class CreateAppointmentService {
     // Consulta no repositório se há o objeto
     const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(
       appointmentDate,
+      provider_id,
     );
 
     if (findAppointmentInSameDate) {

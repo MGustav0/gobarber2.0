@@ -7,7 +7,7 @@ export default class ProviderMonthAvailabilityController {
   public async index(request: Request, response: Response): Promise<Response> {
     // Pega as informações do usuário logado
     const { provider_id } = request.params;
-    const { month, year } = request.body;
+    const { month, year } = request.query;
 
     const listMonthProviderAvailability = container.resolve(
       ListProviderMonthAvailabilityService,
@@ -15,8 +15,8 @@ export default class ProviderMonthAvailabilityController {
 
     const availability = await listMonthProviderAvailability.execute({
       provider_id,
-      month,
-      year,
+      month: Number(month),
+      year: Number(year),
     });
 
     // Retorna ao browser o objeto criado

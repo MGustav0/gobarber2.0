@@ -4,6 +4,7 @@ import Appointment from '@modules/appointments/infra/orm/entities/Appointment';
 
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
+import { classToClass } from 'class-transformer';
 
 interface IRequest {
   provider_id: string;
@@ -45,7 +46,8 @@ class ListProviderAppointmentsService {
         },
       );
 
-      await this.cacheProvider.save(cacheKey, appointments);
+      /** classToClass promove a serialização do cache */
+      await this.cacheProvider.save(cacheKey, classToClass(appointments));
     }
 
     // await this.cacheProvider.save('chave', 'valor');

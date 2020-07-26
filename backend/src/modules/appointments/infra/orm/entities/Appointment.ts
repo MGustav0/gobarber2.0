@@ -32,6 +32,10 @@ class Appointment {
   @Column()
   user_id: string;
 
+  /** () => User, { eager: true } - Traz informações da tabela (users).
+   * { lazy: true } - Permite a busca de uma informação na respectiva tabela (usuário)
+   *  através de requisições pelo código
+   */
   @ManyToOne(() => User)
   @JoinColumn({ name: 'user_id' })
   user: User;
