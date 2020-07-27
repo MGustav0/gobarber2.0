@@ -39,8 +39,14 @@ const AuthProvider: React.FC = ({ children }) => {
     const user = localStorage.getItem('@GoBarber:user');
 
     if (token && user) {
+      /** Define o cabeçalho (header) com nome "authorization" recebendo o token
+       * em todas as requisições autenticadas.
+       */
+      api.defaults.headers.authorization = `Bearer ${token}`;
+
       return { token, user: JSON.parse(user) };
     }
+
     /** Caso não encontre o localStorage com os campos vazios, não retorna nada */
     return {} as AuthState;
   });
@@ -56,6 +62,11 @@ const AuthProvider: React.FC = ({ children }) => {
     /** Armazena o token no localStorage */
     localStorage.setItem('@GoBarber:token', token);
     localStorage.setItem('@GoBarber:user', JSON.stringify(user));
+
+    /** Define o cabeçalho (header) com nome "authorization" recebendo o token
+     * em todas as requisições autenticadas.
+     */
+    api.defaults.headers.authorization = `Bearer ${token}`;
 
     setData({ token, user });
   }, []);
