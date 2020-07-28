@@ -26,9 +26,9 @@ class ListProviderAppointmentsService {
   /** Envia uma lista de usuários da plataforma, por isso o [] no  */
   public async execute({
     provider_id,
-    day,
-    month,
     year,
+    month,
+    day,
   }: IRequest): Promise<Appointment[]> {
     const cacheKey = `provider-appointments:${provider_id}:${year}-${month}-${day}`;
 
@@ -40,17 +40,15 @@ class ListProviderAppointmentsService {
       appointments = await this.appointmentsRepository.findAllInDayFromProvider(
         {
           provider_id,
-          day,
-          month,
           year,
+          month,
+          day,
         },
       );
 
       /** classToClass promove a serialização do cache */
       await this.cacheProvider.save(cacheKey, classToClass(appointments));
     }
-
-    // await this.cacheProvider.save('chave', 'valor');
 
     return appointments;
   }

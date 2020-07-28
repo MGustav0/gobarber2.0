@@ -16,13 +16,13 @@ import '@shared/container';
 
 const app = express();
 
-app.use(rateLimiter);
 app.use(cors());
 
 app.use(express.json());
 
 /** Servir arquivos estáticos com uma linha */
 app.use('/files', express.static(uploadConfig.uploadsFolder));
+app.use(rateLimiter);
 
 app.use(routes);
 
@@ -39,7 +39,7 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
     });
   }
 
-  console.log('O erro é: ', err);
+  console.log('Erros: ', err);
 
   return response.status(500).json({
     status: 'error',
