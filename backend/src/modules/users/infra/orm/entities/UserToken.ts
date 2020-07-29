@@ -10,7 +10,7 @@ import {
 /** Entidade Appointment, usada para descrever os objetos Appointment.
  * É o molde do agendamento. */
 @Entity('user_tokens')
-class User {
+class UserToken {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -28,4 +28,4 @@ class User {
   updated_at: Date;
 }
 
-export default User;
+export default UserToken;
