@@ -58,15 +58,19 @@ Faça como explicado no [README.md do projeto back-end](https://github.com/MGust
 
 ## Como rodar a aplicação :arrow_forward:
 
-Para rodar apenas o front-end:
+Para rodar o app:
 
 1. No terminal, clone o projeto: `git@github.com:MGustav0/gobarber2.0.git`
 
-2. Acesse a pasta via terminal: `cd ./web`.
+2. Acesse a pasta via terminal: `cd ./mobile`.
 
 3. Instale as dependencias: `yarn install`
 
-4. Execute: `yarn start`
+4. No android habilite a depuração do sistema para instalar o app e tenha o Google ADB instalado para conseguir realizar a conexão via cabo. Caso seja um emulador, o Android Studio deve ser instalado (já contém o ADB).
+
+5. Execute: `yarn start`
+
+6. Execute: `yarn android` ou `yarn ios`
 
 ## Layout da Aplicação :dash:
 
