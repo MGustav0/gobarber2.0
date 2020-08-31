@@ -46,6 +46,8 @@ const SignIn: React.FC = () => {
           email: data.email,
           password: data.password,
         });
+
+        history.push('/dashboard');
       } catch (error) {
         if (error instanceof Yup.ValidationError) {
           const errors = getValidationErrors(error);
@@ -54,8 +56,6 @@ const SignIn: React.FC = () => {
 
           return;
         }
-
-        history.push('/dashboard');
 
         /** Dispara um toast message */
         addToast({
