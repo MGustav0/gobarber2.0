@@ -29,7 +29,7 @@ class CreateAppointmentService {
     private cacheProvider: ICacheProvider,
   ) {}
 
-  // Recebe o date e o provider da rota
+  // Recebe o date e o provider da rota via Controller
   public async execute({
     provider_id,
     user_id,
