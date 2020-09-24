@@ -72,23 +72,23 @@ Para rodar apenas o front-end:
 
 ### Criar usuário
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/01_-_create_user.png" width="800" heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/01_-_create_user.png" width="640" heigth="360" />
 
 ### Logar Usuário
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/02_-_user_login.png" width="800" heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/02_-_user_login.png" width="640" heigth="360" />
 
 ### Atualizar Avatar
 
-<img src="" max-width="800" max-heigth="600" />
+<img src="" max-width="640" max-heigth="360" />
 
 ### Criar agendamentos
 
-<img src="" max-width="800" max-heigth="600" />
+<img src="" max-width="640" max-heigth="360" />
 
 ### Listar agendamentos
 
-<img src="" max-width="800" max-heigth="600" />
+<img src="" max-width="640" max-heigth="360" />
 
 ## Resolvendo Problemas :exclamation:
 
