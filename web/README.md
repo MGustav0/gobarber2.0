@@ -72,11 +72,11 @@ Para rodar apenas o front-end:
 
 ### Criar usuário
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/01_-_create_user.png" max-width="800" max-heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/01_-_create_user.png" width="800" heigth="600" />
 
 ### Logar Usuário
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/02_-_user_login.png" max-width="800" max-heigth="600" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/02_-_user_login.png" width="800" heigth="600" />
 
 ### Atualizar Avatar
 
