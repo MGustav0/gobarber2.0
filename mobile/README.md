@@ -76,11 +76,11 @@ Para rodar o app:
 
 ### Criar usuário
 
-<img max-width="270" max-heigth="480" valign="middle" src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/01_-_create_user.jpg">
+<img width="270" heigth="480" valign="middle" src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/01_-_create_user.jpg">
 
 ### Logar Usuário
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/02_-_user_login.jpg" max-width="270" max-heigth="480" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/02_-_user_login.jpg" width="270" heigth="480" />
 
 ### Atualizar Avatar
 
