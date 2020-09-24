@@ -37,9 +37,7 @@ Neste projeto desenvolvo a interface WEB da aplicação GoBarber. Onde será pos
 
 :heavy_check_mark: Login
 
-:heavy_check_mark: Atualizar Avatar
-
-:heavy_check_mark: Listar prestadores
+:heavy_check_mark: Atualizar Perfil
 
 :heavy_check_mark: Listar agendamentos
 
@@ -70,19 +68,15 @@ Para rodar apenas o front-end:
 
 ## Layout da Aplicação :dash:
 
-### Criar usuário
+### Cadastro
 
 <img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/01_-_create_user.png" width="640" heigth="360" />
 
-### Logar Usuário
+### Login
 
 <img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/02_-_user_login.png" width="640" heigth="360" />
 
-### Atualizar Avatar
-
-<img src="" max-width="640" max-heigth="360" />
-
-### Criar agendamentos
+### Atualizar Perfil
 
 <img src="" max-width="640" max-heigth="360" />
 
