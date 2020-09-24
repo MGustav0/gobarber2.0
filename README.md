@@ -74,7 +74,7 @@ Para rodar a aplicação basta acessar as pastas abaixo e seguir os respectivos 
 
 ## ❗️ Resolvendo Problemas
 
-Caso encontre algum problema, bug ou erro me conte [aqui](https://github.com/MGustav0/Proffy/issues)!
+Caso encontre algum problema, bug ou erro me conte [aqui](https://github.com/MGustav0/gobarber2.0/pulls)!
 
 ## 🐙 Desenvolvedor
 
