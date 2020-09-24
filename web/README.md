@@ -78,11 +78,11 @@ Para rodar apenas o front-end:
 
 ### Atualizar Perfil
 
-<img src="" max-width="640" max-heigth="360" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/04_-_upfate_profile.png" max-width="640" max-heigth="360" />
 
 ### Listar agendamentos
 
-<img src="" max-width="640" max-heigth="360" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/04_-_dashboard.png" max-width="640" max-heigth="360" />
 
 ## Resolvendo Problemas :exclamation:
 
