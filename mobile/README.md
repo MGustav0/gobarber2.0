@@ -37,11 +37,11 @@ Neste projeto desenvolvo a interface em App Mobile da aplicação GoBarber, onde
 
 :heavy_check_mark: Login
 
-:x: Atualizar Avatar
+:heavy_check_mark: Atualizar Avatar
 
-:x: Listar prestadores
+:heavy_check_mark: Listar prestadores
 
-:x: Listar agendamentos
+:heavy_check_mark: Listar agendamentos
 
 ## Pré-requisitos
 
