@@ -88,8 +88,7 @@ Para rodar o app:
 
 ### Atualizar Avatar
 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/04_-_profile.jpg" width="270" heigth="480" /> 
-<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/05_-_change_profile.jpg" width="270" heigth="480" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/04_-_profile.jpg" width="270" heigth="480" /> <img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/05_-_change_profile.jpg" width="270" heigth="480" />
 
 ### Criar agendamentos
 
