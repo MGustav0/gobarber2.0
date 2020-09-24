@@ -24,27 +24,35 @@ Front-end web: ![Badge](https://img.shields.io/badge/Bootcamp%20Rocketseat-React
 
 🔹 [Resolvendo Problemas](#❗️-resolvendo-problemas)
 
-🔹 [Tarefas em aberto](#📝-tarefas-em-aberto)
-
 🔹 [Desenvolvedor](#🐙-desenvolvedor)
 
 ## 🔗 Descrição do projeto
 
 <p align="justify">
-  Este é um projeto realizado em conjunto com o bootcamp da Rocketseat, é um projeto de aprendizado e atualização de conceitos de arquitetura em DDD e SOLID aplicados ao TypeScript
+  Este é um projeto realizado em conjunto com o bootcamp da Rocketseat, é um projeto de aprendizado e atualização de conceitos de arquitetura em DDD e SOLID aplicados ao TypeScript principalmente no back-end com NodeJS. Conceitos como código limpo e legível foram aplicados para tornar a aplicação mais simples de se entender.
 
-  Este projeto foi construído sob tutoria da Recketseat utilizando as tecnologias: ReactJS, React Native, NodeJS, TypeScript, SQLite e KNex.
+  Criei um (guia)[] lógico baseado nesta aplicação.
+
+  Neste projeto contêm testes unitários que facilitam a manutenção e uma adição de novas features, são baseados no Jest.
+
+  As tecnologias/ferramentas utilizadas:
+
+  Linguagens: TypeScript, ReactJS e React Native.
+
+  Servidor: NodeJS com Express.
+
+  Banco de dados: PostgreSQL, MongoDB (para as notificações) e Redis (para o cache).
 </p>
 
 ## ℹ️ Funcionalidades
 
-✔️ Criar aulas
+✔️ Criar Usuário e logar barbeiro (Web e Mobile)
 
-✔️ Listar aulas existentes por data, hora e professor
+✔️ Atualizar perfil do barbeiro (Web e Mobile)
 
-✔️ Criar uma conexão entre aluno e professor
+✔️ Criar agendamentos (Mobile)
 
-✔️ Exibir o total de conexões da aplicação
+✔️ Listar agendamentos (Web e Mobile)
 
 ## ▶️ Como rodar a aplicação
 
@@ -58,33 +66,15 @@ Para rodar a aplicação basta acessar as pastas abaixo e seguir os respectivos 
 
 ### 🌐 Web
 
-<img src="https://github.com/MGustav0/Proffy/blob/master/extras/screenshots/web/01_-_dashboard.jpg" width="270" heigth="480" /> <img src="https://github.com/MGustav0/Proffy/blob/master/extras/screenshots/web/02_-_create_proffy.jpg" width="270" heigth="480" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/web/04_-_dashboard.png" width="640" heigth="360" />
 
 ### 📱 Mobile
 
-<img src="https://github.com/MGustav0/Proffy/blob/master/extras/screenshots/mobile/01_-_dashboard.jpg" width="270" heigth="480" /> <img src="https://github.com/MGustav0/Proffy/blob/master/extras/screenshots/mobile/02_-_proffy.jpg" width="270" heigth="480" /> <img src="https://github.com/MGustav0/Proffy/blob/master/extras/screenshots/mobile/03_-_list_proffys.jpg" width="270" heigth="480" /> <img src="https://github.com/MGustav0/Proffy/blob/master/extras/screenshots/mobile/04_-_favorites.jpg" width="270" heigth="480" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/03_-_dashboard.jpg" width="270" heigth="480" />
 
 ## ❗️ Resolvendo Problemas
 
 Caso encontre algum problema, bug ou erro me conte [aqui](https://github.com/MGustav0/Proffy/issues)!
-
-## 📝 Tarefas em aberto
-
-Caso queiram melhorar a aplicação sugiro implementar:
-
-🖊 Cadastro dos professores
-
-🖊 Cadastro dos alunos
-
-🖊 Página de perfil
-
-🖊 Página de edição de perfil
-
-🖊 Avaliação dos professores por meio de nota
-
-🖊 Comentários dos alunos aos professores
-
-🖊 Página de solução de problemas
 
 ## 🐙 Desenvolvedor
 
@@ -95,4 +85,4 @@ Caso queiram melhorar a aplicação sugiro implementar:
 
 The [MIT License](https://opensource.org/licenses/MIT) - Use freely, I am not responsible for the actions of third parties.
 
-©️ Copyright? 2020 - Proffy - Intellectual property does not exist! Copying Is Not Theft.
+©️ Copyright? 2020 - GoBarber - Intellectual property does not exist! Copying Is Not Theft. Copy Authorized by Rocketseat.
