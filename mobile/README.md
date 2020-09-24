@@ -82,17 +82,18 @@ Para rodar o app:
 
 <img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/02_-_user_login.jpg" width="270" heigth="480" />
 
+### Dashboard
+
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/03_-_dashboard.jpg" width="270" heigth="480" />
+
 ### Atualizar Avatar
 
-<img src="" max-width="270" max-heigth="480" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/04_-_profile.jpg" width="270" heigth="480" /> 
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/05_-_change_profile.jpg" width="270" heigth="480" />
 
 ### Criar agendamentos
 
-<img src="" max-width="270" max-heigth="480" />
-
-### Listar agendamentos
-
-<img src="" max-width="270" max-heigth="480" />
+<img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/07_-_appointments.jpg" width="270" heigth="480" /> <img src="https://github.com/MGustav0/gobarber2.0/blob/master/extras/screenshots/mobile/08_-_appointment_done.jpg" width="270" heigth="480" />
 
 ## Resolvendo Problemas :exclamation:
 
